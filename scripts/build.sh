@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source .env
+
 # Gitpod and VsCode Codespaces tasks do not source the user environment
 if [ "${USER}" == "gitpod" ]; then
     which idf.py >/dev/null || {

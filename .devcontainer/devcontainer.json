@@ -36,11 +36,21 @@
         "mutantdino.resourcemonitor",
         "yzhang.markdown-all-in-one",
         "webfreak.debug",
-        "actboy168.tasks"
+        "actboy168.tasks",
+        "Swellaby.rust-pack",
+        "k--kato.intellij-idea-keybindings",
+        "chenxuan.cargo-crate-completer",
+        "Swellaby.vscode-rust-test-adapter",
+        "TabNine.tabnine-vscode",
+        "polypus74.trusty-rusty-snippets"
       ]
     }
   },
-  "forwardPorts": [9012, 9333, 8000],
+  "forwardPorts": [
+    9012,
+    9333,
+    8000
+  ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/home/esp/sandbox,type=bind,consistency=cached",
   "workspaceFolder": "/home/esp/sandbox"
 }

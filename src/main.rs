@@ -11,10 +11,10 @@ fn main() -> anyhow::Result<()> {
     let peripherial = Peripherals::take().unwrap();
 
     let spi = peripherial.spi2;
-    let sclk = peripherial.pins.gpio6;
-    let sdo = peripherial.pins.gpio7;
-    let sdi = peripherial.pins.gpio8;
-    let cs = peripherial.pins.gpio10;
+    let sclk = peripherial.pins.gpio1;
+    let sdo = peripherial.pins.gpio4;
+    let sdi = peripherial.pins.gpio0;
+    let cs = peripherial.pins.gpio5;
 
     let config = spi::config::Config::new()
         .baudrate(1.MHz().into())
@@ -38,8 +38,3 @@ fn main() -> anyhow::Result<()> {
         FreeRtos::delay_ms(1000);
     }
 }
-
-/* 
-https://github.com/esp-rs/esp-idf-hal/blob/master/examples/spi_loopback.rs
-https://github.com/esp-rs/esp-hal/blob/main/esp32c3-hal/examples/spi_loopback.rs
- */
